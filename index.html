@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imtixon 2</title>
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <h1 class="visually-hidden">Payapi</h1>
+    <header class="header container">
+        <a class="logo" href="#">
+            <img src="./img/Group 21.png" alt="thisnavbarlogo">
+        </a>
+        <div id="toggle" class="toggle toggle--active">
+            <span></span>
+        </div>
+    <div id="navbar" class="navbar">
+            <ul class="navbar__nav">
+               
+                <li class="navbar__nav__item"><a class="navbar__nav__item__link" href="#">Pricing</a></li>
+                <li class="navbar__nav__item"><a class="navbar__nav__item__link" href="abaut">About</a></li>
+                <li class="navbar__nav__item"><a class="navbar__nav__item__link" href="#">Contact</a></li>
+            </ul>
+            <a class="navbar__btn" href="#">Schedule a Demo</a>
+    </div>
+    </header>
+    <!-- main qismi -->
+    <main>
+    <section class="container section_hero">
+        <div class="hero">
+            <h1 class="hero__name">
+                Start building with our APIs for absolutely free.
+            </h1>
+            <form  class="hero__form">
+                <input class="hero__form__email" type="email" placeholder="Enter email address">
+                <input class="hero__form__sumbit" value="Schedule a Demo" type="submit">
+               
+            </form>
+            <p class="hero__dec">Have any questions? Contact Us</p>
+        </div>
+        <div class="hero__img"></div>
+    </section>
+
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/ABDUGANIYEV-01/2-imtoxond.git
+    git push -u origin maininit
+
+
+<section  class="abaut">
+    <div class="abaut__item container">
+        <div class="abaut__item__us">
+            <h1 class="abaut__item__us__name">Who we work with</h1>
+            <p class="abaut__item__us__dec">Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. </p>
+            <a class="abaut__item__us__btn" href="#">About Us</a>
+        </div>
+        <div class="abaut__item__img">
+            <a  class="abaut__item__img__imgs" href="#"><img src="./img/tesla.png" ></a>
+            <a  class="abaut__item__img__imgs" href="#"><img src="./img/microso.png" ></a>
+            <a  class="abaut__item__img__imgs" href="#"><img src="./img/hpp.png"></a>
+            <a  class="abaut__item__img__imgs" href="#"><img src="./img/oracle.png"></a>
+            <a  class="abaut__item__img__imgs" href="#"><img src="./img/gggggg.png" ></a>
+            <a  class="abaut__item__img__imgs" href="#"><img src="./img/nvide.png" ></a>
+        </div>
+    </div>
+
+</section>
+
+<section class="implement container">
+    <div class="implement__img">
+
+    </div>
+    <div class="implement__easy">
+        <h1>Easy to implement</h1>
+        <p>Our API comes with just a few lines of code. Youll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</p>
+    </div>
+</section>
+
+
+<section class="container simple">
+    <div class="simple__name">
+        <h1>Simple UI & UX</h1>
+        <p>Our pre-built form is easy to integrate in your app or websites checkout flow and designed to optimize conversion. </p>
+    </div>
+    <div class="simple__img">
+        <img class="simple__img__imgs" src="./img/i[phone10.png" alt="">
+        <img src="./img/i[phone10.png" alt="">
+    </div>
+</section>
+
+<section class="card container">
+    <div class="card__item">
+        <h1 class="card__item__name">Personal Finances</h1>
+        <p class="card__item__dic">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. </p>
+    </div>
+    <div class="card__item__2">
+        <h1 class="card__item__name">Personal Finances</h1>
+        <p class="card__item__dic">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. </p>
+    </div>
+    <div class="card__item__3">
+        <h1 class="card__item__name">Personal Finances</h1>
+        <p class="card__item__dic">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. </p>
+    </div>
+   
+</section>
+
+
+   
+
+
+</main>
+</body>
+<script>
+    var toggle = document.querySelector('#toggle')
+    var navbar = document.querySelector("#navbar")
+    toggle.addEventListener('click', () => {
+       if(toggle.classList.contains('toggle--active')){
+        toggle.classList.remove("toggle--active")
+        navbar.classList.add('visually-hidden')
+       }else{
+        toggle.classList.add("toggle--active")
+        navbar.classList.remove('visually-hidden')
+       }
+    })
+</script>
+</html>

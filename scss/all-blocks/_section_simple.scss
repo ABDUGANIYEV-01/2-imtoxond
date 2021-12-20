@@ -1,0 +1,64 @@
+.simple{
+    display: flex;
+    margin-bottom: 328PX;
+    &__name{
+    width: 50%;
+    margin-right: 300px;
+        &>h1{
+            font-family: DM Serif Display;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: #36536B;
+        }
+        &>P{
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 28px;
+            color: #6C8294;
+        }
+
+    }
+
+    &__img{
+        display: flex;
+        
+        align-items: center;
+        &__imgs{
+            margin-right: 40px;
+        }
+      
+    }
+  
+}
+@media only screen and (max-width: 960px){
+    .simple{
+       
+        align-items: center;
+        text-align: center;
+        flex-direction:column-reverse;
+
+        &__name{
+            width: 60%;
+            margin: 0;
+            align-items: center;
+            text-align: center;
+        }
+    }
+   
+
+}
+@media only screen and (max-width: 728px){
+    .simple{
+       
+      
+
+        &__name{
+        width: 50%;
+        }
+    }
+}

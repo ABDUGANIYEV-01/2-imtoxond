@@ -1,0 +1,195 @@
+.section_hero{
+    display: flex;
+    margin-bottom: 50px;
+   
+    .hero{
+        width: 50%;
+        align-items: center;
+
+        &__name{
+            font-family: DM Serif Display;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 60px;
+            line-height: 72px;
+            letter-spacing: -0.553846px;
+            color: #36536B;
+        }
+
+        &__form{
+            width: 100%;
+            position: relative;
+
+            &__email{
+                background: #FBFCFE;
+                box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                border-radius: 24px;
+                font-family: Public Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;               
+                color: #36536B;
+                mix-blend-mode: normal;
+                opacity: 0.5;
+                padding: 10px 27px;
+                
+                width: 70%;
+                &:hover{
+                    background: #b3b3b3;
+                }
+                &:active{
+                    background: #FBFCFE;
+                    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                    border-radius: 24p
+                }
+            }
+
+            &__sumbit{
+                right: 110px;
+                position: absolute;
+                background: #BA4270;
+                border-radius: 24px;
+                padding: 10px 27px;
+                font-family: Public Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: -0.115385px;
+                color: #FBFCFE;
+                &:hover{
+                    background: #DA6D97;
+                    border-radius: 24px;
+                }
+                &:active{
+                    background: #DA6D97;
+                    border-radius: 24px;
+                }
+            }
+          
+        }
+        &__dec{
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 18px;
+            color: #6C8294;
+            margin-left: 20px;
+            }
+    }
+    .hero__img{
+        width: 50%;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background:url(../../img/i[phone10.png) no-repeat;
+            height: 1000px;
+            width: 363px;
+            top: -15%;
+            right:0 ;
+        }
+    
+           
+            
+            
+        
+    }
+}
+@media only screen and (max-width: 960px){
+    .section_hero{
+        flex-direction:column;
+        .hero{
+            margin-top: 300px;
+            width: 100%;
+            text-align:center;
+          
+          
+
+            &__name{    
+                width: 550px;       
+                text-align: center;
+                font-size: 48px;
+                line-height: 56px;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &__form{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                &__sumbit{
+                    right: 40px;
+                }
+            }
+           
+
+        }
+        .hero__img{
+           
+            &::before{
+            top: -660px;
+             left: 315px;   
+             align-items: center;
+            }
+
+        }
+    }
+    
+}
+@media only screen and (max-width: 728px){
+    .section_hero{
+        text-align: center;
+        .hero{ 
+            width: 100%;
+            &__name{    
+                font-family: DM Serif Display;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 32px;
+                line-height: 36px;
+                
+                text-align: center;
+                letter-spacing: -0.246154px;
+                
+                color: #36536B;
+                
+            }
+            &__form{
+                margin-bottom: 55px;
+                &__email{
+                    width: 90%;
+                }
+                &__sumbit{
+                    top: 50px;
+                  
+                    left: 15px;
+                    width: 90%;
+                }
+
+            }
+        }
+        .hero__img{
+           
+            &::before{
+             left: 215px;
+            }
+            &::after{
+                content: "";
+                background: url(../../img/333333.png)no-repeat;
+                width: 800px;
+                height: 790px;
+                position: absolute;
+                top: -750px;
+                z-index: -1;
+                
+                
+             }
+
+        }
+    }
+    
+}

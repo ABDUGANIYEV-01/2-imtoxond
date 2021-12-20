@@ -1,0 +1,169 @@
+.header{
+    margin-bottom: 100px;
+    margin-top: 20px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     .logo{
+         img{
+            display: flex;
+         }
+         
+     }
+     .toggle{
+         width: 24px;
+         height: 24px;
+         display: none;
+         z-index: +2;
+         align-items: center;
+     }
+    .navbar{
+        margin-left: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-between ;
+       
+        &__nav{
+            display: flex;
+            list-style: none;
+    
+    
+            &__item{
+             display: flex;
+             margin-right: 30px;
+             align-items: center;
+             align-items: center;
+    
+                &__link{
+                    padding: 10px 15px;
+                    font-family: Public Sans;
+                    font-style: normal;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: #36536B;
+                    opacity: 0.7;
+                    &:hover{
+                        opacity:0.9;
+                        
+                    }
+                  &:active{
+                    opacity: 1;
+                  }
+                }
+            }
+        }
+        &__btn{
+            background: #BA4270;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            border-radius: 24px;
+            text-decoration: none;
+            font-family: Public Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            color: #FBFCFE;
+            padding: 10px 20px;
+            text-align: center;
+
+            &:hover{
+                background: #be4f7a;
+            }
+            &:active{
+                background: #DA6D97;
+            }
+        }
+       
+    }
+    
+}
+@media only screen and (max-width: 960px){
+
+}
+@media only screen and (max-width: 728px){
+    .header{
+        position: relative;
+        .toggle{
+            &:hover{
+                cursor: pointer;
+
+            }
+            @include diplayFlexSetter(space-evenly,center);
+            position: relative;
+            flex-direction: column;
+            &::after, &::before{
+                content: "";
+            }
+            &::after, &::before, &>span{
+                width: 100%;
+                height: 2px;
+                background-color: black;
+            }
+          
+            &--active{
+                  
+                &::after,  &::before{
+                    position: absolute;
+                    background-color:white;
+                    
+                }
+                &::after{
+                    top: 50%;
+                    transform: translateY(-50%)rotate(45deg);
+                }
+                &>span{
+                    opacity: 0;
+                }
+                &::before{
+                    bottom: 50%;
+                    transform: translateY(50%)rotate(-45deg);
+                }
+            }
+        }
+        .navbar{
+            z-index: +1;
+            transition: opacity .5s ease-in-out;
+            width: 80%;
+            height: 670px;
+            background: #1B262F;
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            top: -20px;
+            position: absolute;
+            flex-direction: column;
+            right: 0;
+            justify-content:center;
+            padding-top: 100px;
+            &::after{
+                content: "";
+                position: absolute;
+                border-bottom: 2px solid  #FBFCFE;
+                width: 90%;
+                top: 70px;
+                mix-blend-mode: normal;
+                opacity: 0.15;
+                
+            }
+
+            &__nav{ 
+                
+                flex-direction: column;
+                 &__item__link{
+                color:white;
+                padding-bottom: 30px;
+                text-align: center;
+                align-items: center;
+                 }    
+            }
+
+            &__btn{
+                margin-bottom: auto;
+                width: 80%;
+                align-items: center;
+            }
+        }
+    }
+}
